@@ -1,0 +1,782 @@
+{
+  "@@locale": "en",
+  "appTitle": "Attendance",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  "selfCheckInProgress": "Checking AI models and system resources...",
+  "@selfCheckInProgress": {
+    "description": "Message shown while startup model self check is running"
+  },
+  "selfCheckPassed": "All models initialized and verified successfully.",
+  "@selfCheckPassed": {
+    "description": "Message shown when all models are verified"
+  },
+  "selfCheckFailedTitle": "Startup Check Failed",
+  "@selfCheckFailedTitle": {
+    "description": "Title on error screen when self check fails"
+  },
+  "selfCheckFailedDescription": "The application cannot start because one or more AI models failed initialization.",
+  "@selfCheckFailedDescription": {
+    "description": "Description on error screen when self check fails"
+  },
+  "failedModelsHeader": "Failed Models",
+  "@failedModelsHeader": {
+    "description": "Header for failed models list"
+  },
+  "verifiedModelsHeader": "Verified Models",
+  "@verifiedModelsHeader": {
+    "description": "Header for verified models list"
+  },
+  "modelNameLabel": "Model",
+  "@modelNameLabel": {
+    "description": "Label for model name"
+  },
+  "expectedPathLabel": "Path",
+  "@expectedPathLabel": {
+    "description": "Label for model file path"
+  },
+  "reasonLabel": "Reason",
+  "@reasonLabel": {
+    "description": "Label for error reason"
+  },
+  "statusLabel": "Status",
+  "@statusLabel": {
+    "description": "Label for status"
+  },
+  "statusPassed": "Passed",
+  "@statusPassed": {
+    "description": "Status text for passed check"
+  },
+  "statusFailed": "Failed",
+  "@statusFailed": {
+    "description": "Status text for failed check"
+  },
+  "retryButton": "Retry",
+  "@retryButton": {
+    "description": "Retry button label"
+  },
+  "homeStatusReady": "System is ready for attendance.",
+  "@homeStatusReady": {
+    "description": "Status text on home screen when system is ready"
+  },
+  "homeDevCameraAction": "Camera & Pipeline Dev Screen",
+  "@homeDevCameraAction": {
+    "description": "Button to open camera developer test screen"
+  },
+  "devCameraTitle": "Camera & Pipeline Dev",
+  "@devCameraTitle": {
+    "description": "Title for camera development screen"
+  },
+  "devCameraPermissionRequired": "Camera permission is required to stream and verify frames.",
+  "@devCameraPermissionRequired": {
+    "description": "Message shown when camera permission is not granted"
+  },
+  "devCameraGrantPermission": "Grant Permission",
+  "@devCameraGrantPermission": {
+    "description": "Button to request camera permission"
+  },
+  "devCameraOpenSettings": "Open Settings",
+  "@devCameraOpenSettings": {
+    "description": "Button to open app settings when permission is permanently denied"
+  },
+  "devCameraFpsLabel": "FPS",
+  "@devCameraFpsLabel": {
+    "description": "Label for FPS meter"
+  },
+  "devCameraLatencyLabel": "Latency",
+  "@devCameraLatencyLabel": {
+    "description": "Label for latency meter"
+  },
+  "devCameraTierLabel": "Tier",
+  "@devCameraTierLabel": {
+    "description": "Label for hardware tier badge"
+  },
+  "devCameraDroppedFrames": "Dropped",
+  "@devCameraDroppedFrames": {
+    "description": "Label for dropped frames count"
+  },
+  "devCameraProcessedFrames": "Processed",
+  "@devCameraProcessedFrames": {
+    "description": "Label for processed frames count"
+  },
+  "devCameraThumbnailTitle": "PixelSampler Upright RGB (Un-mirrored)",
+  "@devCameraThumbnailTitle": {
+    "description": "Title above the upright pixel sampler thumbnail"
+  },
+  "devCameraTierOverrideLabel": "Hardware Tier Override",
+  "@devCameraTierOverrideLabel": {
+    "description": "Label for tier override dropdown"
+  },
+  "devCameraRerunBenchmark": "Re-run Benchmark",
+  "@devCameraRerunBenchmark": {
+    "description": "Button to re-run inference latency benchmark"
+  },
+  "devCameraBenchmarking": "Benchmarking...",
+  "@devCameraBenchmarking": {
+    "description": "Status text while benchmark is executing"
+  },
+  "devCameraTierAuto": "Automatic (Benchmarked)",
+  "@devCameraTierAuto": {
+    "description": "Automatic tier selection"
+  },
+  "devCameraTierLow": "Low Tier",
+  "@devCameraTierLow": {
+    "description": "Low tier label"
+  },
+  "devCameraTierMid": "Mid Tier",
+  "@devCameraTierMid": {
+    "description": "Mid tier label"
+  },
+  "devCameraTierHigh": "High Tier",
+  "@devCameraTierHigh": {
+    "description": "High tier label"
+  },
+  "homeDevDetectionAction": "Face Detection & Alignment Dev Screen",
+  "@homeDevDetectionAction": {
+    "description": "Button to open detection and alignment dev screen"
+  },
+  "devDetectionTitle": "Detection & Alignment Dev",
+  "@devDetectionTitle": {
+    "description": "Title for detection dev screen"
+  },
+  "devDetectionTrackingId": "Tracking ID",
+  "@devDetectionTrackingId": {
+    "description": "Label for face tracking ID"
+  },
+  "devDetectionEulerAngles": "Pose (Yaw / Pitch / Roll)",
+  "@devDetectionEulerAngles": {
+    "description": "Label for head pose angles"
+  },
+  "devDetectionEyeOpen": "Eyes Open (L / R)",
+  "@devDetectionEyeOpen": {
+    "description": "Label for eye open probabilities"
+  },
+  "devDetectionSmiling": "Smiling",
+  "@devDetectionSmiling": {
+    "description": "Label for smiling probability"
+  },
+  "devDetectionQualityIssues": "Quality Status",
+  "@devDetectionQualityIssues": {
+    "description": "Label for quality issues status"
+  },
+  "devDetectionQualityPass": "Quality Passed",
+  "@devDetectionQualityPass": {
+    "description": "Text displayed when quality gate passes"
+  },
+  "devDetectionAlignedThumbnail": "Aligned 112x112 Face Crop",
+  "@devDetectionAlignedThumbnail": {
+    "description": "Title above aligned face thumbnail"
+  },
+  "devDetectionFaceStats": "Sharpness / Brightness / Glare",
+  "@devDetectionFaceStats": {
+    "description": "Label for face crop statistics"
+  },
+  "qualityIssueNoFace": "No face detected",
+  "@qualityIssueNoFace": {
+    "description": "Quality guidance when no face is in frame"
+  },
+  "qualityIssueMultipleFaces": "Only one person allowed",
+  "@qualityIssueMultipleFaces": {
+    "description": "Quality guidance when multiple faces are detected"
+  },
+  "qualityIssueTooSmall": "Move closer",
+  "@qualityIssueTooSmall": {
+    "description": "Quality guidance when face is too far"
+  },
+  "qualityIssueNotInsideGuide": "Position face inside oval",
+  "@qualityIssueNotInsideGuide": {
+    "description": "Quality guidance when face is outside oval guide"
+  },
+  "qualityIssuePoseOutOfRange": "Look straight at camera",
+  "@qualityIssuePoseOutOfRange": {
+    "description": "Quality guidance when head is turned or tilted"
+  },
+  "qualityIssueLandmarksMissing": "Ensure face is clearly visible",
+  "@qualityIssueLandmarksMissing": {
+    "description": "Quality guidance when facial landmarks are missing"
+  },
+  "qualityIssueTooBlurry": "Hold still",
+  "@qualityIssueTooBlurry": {
+    "description": "Quality guidance when face image is blurry"
+  },
+  "qualityIssueTooDark": "Move to a brighter area",
+  "@qualityIssueTooDark": {
+    "description": "Quality guidance when lighting is too dim"
+  },
+  "qualityIssueTooBright": "Reduce lighting",
+  "@qualityIssueTooBright": {
+    "description": "Quality guidance when lighting is too bright"
+  },
+  "qualityIssueGlare": "Remove glare from face",
+  "@qualityIssueGlare": {
+    "description": "Quality guidance when specular glare is detected on face"
+  },
+  "homeDevPassiveAction": "Passive Liveness Dev Screen",
+  "@homeDevPassiveAction": {
+    "description": "Button to open passive liveness developer screen"
+  },
+  "devPassiveTitle": "Passive Liveness Dev",
+  "@devPassiveTitle": {
+    "description": "Title for passive liveness developer screen"
+  },
+  "devPassiveModelV2Label": "MiniFASNetV2",
+  "@devPassiveModelV2Label": {
+    "description": "Label for MiniFASNetV2 model"
+  },
+  "devPassiveModelV1SeLabel": "MiniFASNetV1SE",
+  "@devPassiveModelV1SeLabel": {
+    "description": "Label for MiniFASNetV1SE model"
+  },
+  "devPassiveMeanScore": "Mean Score",
+  "@devPassiveMeanScore": {
+    "description": "Label for mean passive score"
+  },
+  "devPassiveVerdict": "Aggregated Verdict",
+  "@devPassiveVerdict": {
+    "description": "Label for aggregated verdict"
+  },
+  "devPassiveVerdictPending": "Pending",
+  "@devPassiveVerdictPending": {
+    "description": "Verdict status when pending samples"
+  },
+  "devPassiveVerdictPassed": "Passed (Real)",
+  "@devPassiveVerdictPassed": {
+    "description": "Verdict status when liveness check passed"
+  },
+  "devPassiveVerdictFailed": "Failed (Spoof)",
+  "@devPassiveVerdictFailed": {
+    "description": "Verdict status when liveness check failed"
+  },
+  "devPassiveSamplesCount": "Samples",
+  "@devPassiveSamplesCount": {
+    "description": "Label for samples count"
+  },
+  "devPassivePassingRatio": "Passing Ratio",
+  "@devPassivePassingRatio": {
+    "description": "Label for passing ratio"
+  },
+  "devPassiveExportCsv": "Export CSV",
+  "@devPassiveExportCsv": {
+    "description": "Button to export samples as CSV"
+  },
+  "devPassiveResetSession": "Reset Session",
+  "@devPassiveResetSession": {
+    "description": "Button to reset current passive liveness session"
+  },
+  "devPassiveStartSession": "Start Session",
+  "@devPassiveStartSession": {
+    "description": "Button to start sampling session"
+  },
+  "devPassiveStopSession": "Stop Session",
+  "@devPassiveStopSession": {
+    "description": "Button to stop sampling session"
+  },
+  "devPassiveModelsToRun": "Models to Run",
+  "@devPassiveModelsToRun": {
+    "description": "Label for model selection dropdown"
+  },
+  "devPassiveModelOptionBoth": "Both V2 & V1SE",
+  "@devPassiveModelOptionBoth": {
+    "description": "Option to run both models"
+  },
+  "devPassiveModelOptionV2Only": "V2 Only (Low Tier)",
+  "@devPassiveModelOptionV2Only": {
+    "description": "Option to run V2 only"
+  },
+  "devPassiveModelOptionV1SeOnly": "V1SE Only",
+  "@devPassiveModelOptionV1SeOnly": {
+    "description": "Option to run V1SE only"
+  },
+  "devPassiveCsvExportEmpty": "No samples recorded to export.",
+  "@devPassiveCsvExportEmpty": {
+    "description": "Message when CSV export has no samples"
+  },
+  "devPassiveCsvExportSuccess": "CSV exported successfully.",
+  "@devPassiveCsvExportSuccess": {
+    "description": "Message when CSV export completes"
+  },
+  "homeDevChallengesAction": "Active Challenges Dev Screen",
+  "@homeDevChallengesAction": {
+    "description": "Button to navigate to active challenges developer screen"
+  },
+  "challengesDevTitle": "Active Challenges & Temporal",
+  "@challengesDevTitle": {
+    "description": "Title of active challenges dev screen"
+  },
+  "challengeLookStraight": "Look straight at the camera",
+  "@challengeLookStraight": {
+    "description": "Instruction for neutral pose challenge"
+  },
+  "challengeBlink": "Blink your eyes",
+  "@challengeBlink": {
+    "description": "Instruction for eye blink challenge"
+  },
+  "challengeTurnLeft": "Turn your head left",
+  "@challengeTurnLeft": {
+    "description": "Instruction to turn head left"
+  },
+  "challengeTurnRight": "Turn your head right",
+  "@challengeTurnRight": {
+    "description": "Instruction to turn head right"
+  },
+  "challengeSmile": "Smile",
+  "@challengeSmile": {
+    "description": "Instruction to smile"
+  },
+  "challengeStatusPending": "Pending",
+  "@challengeStatusPending": {
+    "description": "Challenge pending state"
+  },
+  "challengeStatusPassed": "Passed",
+  "@challengeStatusPassed": {
+    "description": "Challenge passed state"
+  },
+  "challengeStatusFailed": "Failed",
+  "@challengeStatusFailed": {
+    "description": "Challenge failed state"
+  },
+  "challengeReasonTimeout": "Challenge timed out",
+  "@challengeReasonTimeout": {
+    "description": "Failure reason when challenge times out"
+  },
+  "challengeReasonTrackingLost": "Face lost",
+  "@challengeReasonTrackingLost": {
+    "description": "Failure reason when face tracking is lost"
+  },
+  "challengeReasonTrackingChanged": "Face changed",
+  "@challengeReasonTrackingChanged": {
+    "description": "Failure reason when face tracking ID changes"
+  },
+  "challengeReasonWrongDirection": "Turned in wrong direction",
+  "@challengeReasonWrongDirection": {
+    "description": "Failure reason when head turned in wrong direction"
+  },
+  "newChallengesAction": "New Random Challenges",
+  "@newChallengesAction": {
+    "description": "Button to generate new random active challenges"
+  },
+  "resetChallengeAction": "Reset",
+  "@resetChallengeAction": {
+    "description": "Button to reset active challenge state machine"
+  },
+  "temporalMicroMotion": "Micro-motion",
+  "@temporalMicroMotion": {
+    "description": "Label for facial micro-motion score"
+  },
+  "temporalLoopDetection": "Loop Detection",
+  "@temporalLoopDetection": {
+    "description": "Label for video loop detection score"
+  },
+  "temporalPlanarRigidity": "3D Rigidity",
+  "@temporalPlanarRigidity": {
+    "description": "Label for 3D depth parallax rigidity score"
+  },
+  "temporalConfidence": "Temporal Confidence",
+  "@temporalConfidence": {
+    "description": "Label for combined temporal confidence score"
+  },
+  "flashChallengeAction": "Test Flash Challenge",
+  "@flashChallengeAction": {
+    "description": "Button to trigger full-screen color flash test"
+  },
+  "flashStatus": "Flash Reflection",
+  "@flashStatus": {
+    "description": "Label for flash evaluation status"
+  },
+  "flashVerdictPassed": "Flash Passed",
+  "@flashVerdictPassed": {
+    "description": "Status text when flash correlation passes"
+  },
+  "flashVerdictFailed": "Flash Failed",
+  "@flashVerdictFailed": {
+    "description": "Status text when flash correlation fails"
+  },
+  "flashVerdictInconclusive": "Inconclusive",
+  "@flashVerdictInconclusive": {
+    "description": "Status text when flash correlation is inconclusive"
+  },
+  "flashVerdictSkipped": "Skipped (Lighting)",
+  "@flashVerdictSkipped": {
+    "description": "Status text when flash challenge is skipped due to ambient light"
+  },
+  "startVerification": "Start Attendance Verification",
+  "@startVerification": {
+    "description": "Button to launch the attendance verification flow"
+  },
+  "verificationTitle": "Face Verification",
+  "@verificationTitle": {
+    "description": "Title of the verification screen"
+  },
+  "statePositioning": "Position your face inside the oval",
+  "@statePositioning": {
+    "description": "Instruction during initial face positioning phase"
+  },
+  "stateNeutral": "Look straight at the camera",
+  "@stateNeutral": {
+    "description": "Instruction during neutral face calibration phase"
+  },
+  "stateFinalizing": "Verifying liveness... Please hold still",
+  "@stateFinalizing": {
+    "description": "Instruction during finalizing crop collection phase"
+  },
+  "stateSucceeded": "Verification Succeeded",
+  "@stateSucceeded": {
+    "description": "Status text when verification succeeds"
+  },
+  "stateFailed": "Verification Failed",
+  "@stateFailed": {
+    "description": "Status text when verification fails"
+  },
+  "stateLocked": "Verification Locked",
+  "@stateLocked": {
+    "description": "Status text when screen is locked due to consecutive failures"
+  },
+  "lockoutCountdown": "Locked out due to repeated failures. Try again in {seconds} seconds.",
+  "@lockoutCountdown": {
+    "description": "Lockout message showing remaining seconds",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "totalTimeRemaining": "{seconds}s remaining",
+  "@totalTimeRemaining": {
+    "description": "Total session timer countdown text",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reasonTimeout": "Session timed out",
+  "@reasonTimeout": {
+    "description": "Failure reason when session or step times out"
+  },
+  "reasonFaceLost": "Face tracking lost",
+  "@reasonFaceLost": {
+    "description": "Failure reason when face tracking is lost beyond grace period"
+  },
+  "reasonTrackingChanged": "Different face detected",
+  "@reasonTrackingChanged": {
+    "description": "Failure reason when tracking ID changes during active session"
+  },
+  "reasonChallengeFailed": "Active challenge failed",
+  "@reasonChallengeFailed": {
+    "description": "Failure reason when user fails active challenge"
+  },
+  "reasonPassiveFailed": "Passive liveness check failed",
+  "@reasonPassiveFailed": {
+    "description": "Failure reason when passive anti-spoofing score is below threshold"
+  },
+  "reasonPassiveHardFloorViolation": "Security violation: potential photo substitute detected",
+  "@reasonPassiveHardFloorViolation": {
+    "description": "Failure reason when passive score drops below hard floor"
+  },
+  "reasonTemporalFailed": "Natural facial motion check failed",
+  "@reasonTemporalFailed": {
+    "description": "Failure reason when temporal motion analysis fails"
+  },
+  "reasonFlashFailed": "Screen flash reflection test failed",
+  "@reasonFlashFailed": {
+    "description": "Failure reason when flash reflection does not correlate"
+  },
+  "reasonCancelled": "Session cancelled",
+  "@reasonCancelled": {
+    "description": "Failure reason when session was cancelled"
+  },
+  "reasonTooManyAttempts": "Too many consecutive failed attempts",
+  "@reasonTooManyAttempts": {
+    "description": "Failure reason when consecutive failure limit is exceeded"
+  },
+  "actionCancel": "Cancel",
+  "@actionCancel": {
+    "description": "Button to cancel session"
+  },
+  "actionRetry": "Try Again",
+  "@actionRetry": {
+    "description": "Button to retry verification after failure"
+  },
+  "actionDone": "Done",
+  "@actionDone": {
+    "description": "Button to finish or return home"
+  },
+  "resultTitle": "Verification Result",
+  "@resultTitle": {
+    "description": "Title of verification result screen"
+  },
+  "resultPassedTitle": "Liveness Verified",
+  "@resultPassedTitle": {
+    "description": "Headline when verification passes"
+  },
+  "resultFailedTitle": "Verification Failed",
+  "@resultFailedTitle": {
+    "description": "Headline when verification fails"
+  },
+  "resultDuration": "Duration: {duration} ms",
+  "@resultDuration": {
+    "description": "Session duration metric",
+    "placeholders": {
+      "duration": {
+        "type": "int"
+      }
+    }
+  },
+  "resultPassiveScore": "Mean Passive Score: {score}",
+  "@resultPassiveScore": {
+    "description": "Mean passive score metric",
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "resultTemporalScore": "Temporal Confidence: {score}",
+  "@resultTemporalScore": {
+    "description": "Temporal confidence metric",
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "resultChallengesCompleted": "Completed Challenges: {count}",
+  "@resultChallengesCompleted": {
+    "description": "Number of completed challenges",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "resultCropsCount": "Aligned Crops Captured: {count}",
+  "@resultCropsCount": {
+    "description": "Number of aligned face crops captured",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "employeesTitle": "Employees",
+  "@employeesTitle": {
+    "description": "Title of employees management screen"
+  },
+  "enrollEmployee": "Enroll Employee",
+  "@enrollEmployee": {
+    "description": "Button to enroll new employee"
+  },
+  "reEnrollEmployee": "Re-enroll Face",
+  "@reEnrollEmployee": {
+    "description": "Button to re-enroll existing employee face"
+  },
+  "employeeName": "Employee Name",
+  "@employeeName": {
+    "description": "Label for employee name"
+  },
+  "employeeCode": "Employee Code",
+  "@employeeCode": {
+    "description": "Label for employee code"
+  },
+  "employeeNameHint": "e.g. John Doe",
+  "@employeeNameHint": {
+    "description": "Hint for employee name"
+  },
+  "employeeCodeHint": "e.g. EMP-101",
+  "@employeeCodeHint": {
+    "description": "Hint for employee code"
+  },
+  "employeeCodeExists": "Employee code already exists",
+  "@employeeCodeExists": {
+    "description": "Validation error when code is duplicated"
+  },
+  "employeeNameRequired": "Employee name is required",
+  "@employeeNameRequired": {
+    "description": "Validation error when name is empty"
+  },
+  "employeeCodeRequired": "Employee code is required",
+  "@employeeCodeRequired": {
+    "description": "Validation error when code is empty"
+  },
+  "noEmployeesFound": "No employees registered yet.",
+  "@noEmployeesFound": {
+    "description": "Empty state when no employees are enrolled"
+  },
+  "searchEmployees": "Search employees by name or code",
+  "@searchEmployees": {
+    "description": "Search field hint"
+  },
+  "deleteEmployeeTitle": "Delete Employee",
+  "@deleteEmployeeTitle": {
+    "description": "Title for delete confirmation dialog"
+  },
+  "deleteEmployeeConfirm": "Are you sure you want to delete {name}? All associated biometric data will be permanently removed.",
+  "@deleteEmployeeConfirm": {
+    "description": "Confirmation message before deleting an employee",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteAction": "Delete",
+  "@deleteAction": {
+    "description": "Delete button label"
+  },
+  "cancelAction": "Cancel",
+  "@cancelAction": {
+    "description": "Cancel button label"
+  },
+  "saveAction": "Save",
+  "@saveAction": {
+    "description": "Save button label"
+  },
+  "editEmployee": "Edit Employee",
+  "@editEmployee": {
+    "description": "Dialog title for editing employee"
+  },
+  "statusActive": "Active",
+  "@statusActive": {
+    "description": "Status text for active employee"
+  },
+  "statusInactive": "Inactive",
+  "@statusInactive": {
+    "description": "Status text for inactive employee"
+  },
+  "needsReEnrollmentBadge": "Needs Re-enrollment",
+  "@needsReEnrollmentBadge": {
+    "description": "Badge shown when embeddings mismatch current model"
+  },
+  "enrollmentTitle": "Employee Enrollment",
+  "@enrollmentTitle": {
+    "description": "Title of enrollment screen"
+  },
+  "enrollmentFormHeader": "Employee Information",
+  "@enrollmentFormHeader": {
+    "description": "Header for employee form in enrollment"
+  },
+  "enrollmentStartCapture": "Start Face Capture",
+  "@enrollmentStartCapture": {
+    "description": "Button to advance from form to camera capture"
+  },
+  "enrollmentSampleCount": "Sample {current} of {total}",
+  "@enrollmentSampleCount": {
+    "description": "Progress of enrollment sample captures",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "poseFront": "Look straight at the camera",
+  "@poseFront": {
+    "description": "Instruction for frontal pose"
+  },
+  "poseSlightLeft": "Turn your head slightly left",
+  "@poseSlightLeft": {
+    "description": "Instruction for slight left pose"
+  },
+  "poseSlightRight": "Turn your head slightly right",
+  "@poseSlightRight": {
+    "description": "Instruction for slight right pose"
+  },
+  "poseSlightUp": "Tilt your head slightly up",
+  "@poseSlightUp": {
+    "description": "Instruction for slight up pose"
+  },
+  "poseSlightDown": "Tilt your head slightly down",
+  "@poseSlightDown": {
+    "description": "Instruction for slight down pose"
+  },
+  "enrollmentProcessing": "Processing and encrypting biometric templates...",
+  "@enrollmentProcessing": {
+    "description": "Status text while processing enrollment samples"
+  },
+  "duplicateWarningTitle": "Duplicate Face Warning",
+  "@duplicateWarningTitle": {
+    "description": "Title for duplicate face warning dialog"
+  },
+  "duplicateWarningMessage": "This face closely matches active employee {name} ({code}) with similarity {score}. Do you want to proceed with enrollment anyway?",
+  "@duplicateWarningMessage": {
+    "description": "Warning message when newly enrolled face matches an existing employee",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      },
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmEnrollmentAction": "Proceed Anyway",
+  "@confirmEnrollmentAction": {
+    "description": "Button to confirm enrollment despite duplicate match"
+  },
+  "enrollmentSuccess": "Employee enrolled successfully",
+  "@enrollmentSuccess": {
+    "description": "Success message after enrollment"
+  },
+  "identificationTitle": "Employee Identification",
+  "@identificationTitle": {
+    "description": "Header for identification section"
+  },
+  "identifiedEmployee": "Identified Employee",
+  "@identifiedEmployee": {
+    "description": "Badge for successfully identified employee"
+  },
+  "matchScore": "Match: {percent}% (Cosine: {score})",
+  "@matchScore": {
+    "description": "Display score for face match",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "noMatchFound": "Face Not Recognized",
+  "@noMatchFound": {
+    "description": "Title when face is not recognized"
+  },
+  "noMatchDescription": "No enrolled employee matched this face above the recognition threshold.",
+  "@noMatchDescription": {
+    "description": "Description when no match is found"
+  },
+  "ambiguousMatch": "Recognition Ambiguous",
+  "@ambiguousMatch": {
+    "description": "Title when recognition margin is too low"
+  },
+  "ambiguousDescription": "Similarity was too close between {name1} and {name2}. Please retry verification.",
+  "@ambiguousDescription": {
+    "description": "Description for ambiguous match",
+    "placeholders": {
+      "name1": {
+        "type": "String"
+      },
+      "name2": {
+        "type": "String"
+      }
+    }
+  },
+  "noEnrolledEmployees": "No Enrolled Employees",
+  "@noEnrolledEmployees": {
+    "description": "Title when database has no employees"
+  },
+  "noEnrolledDescription": "Please enroll employees before verifying attendance.",
+  "@noEnrolledDescription": {
+    "description": "Description when database has no employees"
+  },
+  "homeEmployeesAction": "Employees & Enrollment",
+  "@homeEmployeesAction": {
+    "description": "Home screen button to navigate to employees list"
+  }
+}
